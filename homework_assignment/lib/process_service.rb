@@ -1,12 +1,7 @@
 require './lib/activity_logger.rb'
-require 'sys/proctable'
-require 'net/http'
 require 'uri'
-require 'json'
 
 class ProcessService
-  include Sys
-
   def initialize(platform)
     @platform = platform
   end
